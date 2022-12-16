@@ -21,8 +21,8 @@ public class MyList<T> {
     }
 
     public T get(int index) {
-        if (index < size || index < 0)
-        return elementData [index];
+        if (index < size && index >= 0)
+            return elementData [index];
         else throw new IndexOutOfBoundsException("Index Out Of Bounds");
     }
 
